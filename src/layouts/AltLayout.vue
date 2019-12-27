@@ -34,6 +34,9 @@ query {
 </static-query>
 
 <style>
+.body {
+  background: #f3f7f9;
+}
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;

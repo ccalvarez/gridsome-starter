@@ -1,6 +1,6 @@
 <template>
   <footer>
-    Copycito {{getCurrentYear}} by
+    Copyright {{getCurrentYear}} by
     <a :href="href">newadventures</a>
   </footer>
 </template>
