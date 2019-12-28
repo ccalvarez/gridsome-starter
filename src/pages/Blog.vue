@@ -2,7 +2,9 @@
   <Layout>
     <h1>Blog</h1>
     <article v-for="edge in $static.allPost.edges" :key="edge.node.id">
-      <h2>{{ edge.node.title }}</h2>
+      <h2>
+        <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
+      </h2>
       <p>{{ edge.node.excerpt }}</p>
       <p>Posted {{ edge.node.date }} - {{ edge.node.timeToRead }} min read</p>
       <div>
@@ -13,6 +15,7 @@
           >#{{ tag }}</span
         >
       </div>
+      <!-- <g-link :to="edge.node.path">Read Post</g-link> -->
     </article>
   </Layout>
 </template>
@@ -28,6 +31,7 @@
         date (format: "MMMM Do, YYYY")
         tags
         timeToRead
+        path
       }
     }
   }
