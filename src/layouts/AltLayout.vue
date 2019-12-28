@@ -8,6 +8,7 @@
         <g-link exact class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
         <g-link class="nav__link" to="/products/">Products</g-link>
+        <g-link class="nav__link" to="/blog/">Blog</g-link>
       </nav>
     </header>
     <slot />
@@ -16,13 +17,13 @@
 </template>
 
 <script>
-import Footer from "@/components/Footer.vue";
+import Footer from '@/components/Footer.vue';
 
 export default {
   components: {
-    Footer
+    Footer,
   },
-  props: ["showFooter"]
+  props: ['showFooter'],
 };
 </script>
 <static-query>
@@ -38,8 +39,8 @@ query {
   background: #f3f7f9;
 }
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
