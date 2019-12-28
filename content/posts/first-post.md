@@ -1,3 +1,10 @@
+---
+title: First Post
+excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+date: 2019-11-30
+tags: ['shoes', 'jackets']
+---
+
 ## First Post
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse.
