@@ -6,7 +6,7 @@
         <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
       </h2>
       <p>{{ edge.node.excerpt }}</p>
-      <p>Posted {{ edge.node.date }} - {{ edge.node.timeToRead }} min read</p>
+      <p>Posted {{ edge.node.date }} · {{ edge.node.timeToRead }} min read</p>
       <div>
         <span
           style="padding-right: .25em"
