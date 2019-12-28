@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <h1>Blog</h1>
+    <h1>{{ $page.tag.title }}</h1>
     <article
-      v-for="edge in $static.allPost.edges"
+      v-for="edge in $page.tag.belongsTo.edges"
       :key="edge.node.id"
       style="margin-bottom: 2em"
     >
@@ -26,12 +26,16 @@
   </Layout>
 </template>
 
-<static-query>
-{
-  allPost {
- 		edges {
-      node {
-        id
+<page-query>
+query ($id: String!) {
+  tag(id: $id) {
+    title
+    belongsTo {
+      edges
+      {
+        node {
+          ... on Post {
+            id
         title
         excerpt
         date (format: "MMMM Do, YYYY")
@@ -42,8 +46,11 @@
         timeToRead
         path
         cover_image (width: 1000, height: 300,  blur: 10)
+          }
+        }
+
       }
     }
   }
 }
-</static-query>
+</page-query>
