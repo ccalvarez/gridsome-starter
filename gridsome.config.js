@@ -6,5 +6,6 @@
 
 module.exports = {
   siteName: 'Vue Couture',
+  siteDescription: 'My first Gridsome Application Hooray!',
   plugins: [],
 };
