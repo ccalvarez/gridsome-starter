@@ -3,6 +3,7 @@ title: First Post
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 date: 2019-11-30
 tags: ['shoes', 'jackets']
+cover_image: './images/bg-1.jpg'
 ---
 
 ## First Post

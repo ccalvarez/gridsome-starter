@@ -3,6 +3,7 @@ title: Second Post
 excerpt: 'Amet mattis vulputate enim nulla aliquet porttitor.'
 date: 2019-12-05
 tags: ['shoes', 'apparel']
+cover_image: './images/bg-2.jpg'
 ---
 
 ## Second Post
