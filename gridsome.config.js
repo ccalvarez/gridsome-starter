@@ -7,5 +7,14 @@
 module.exports = {
   siteName: 'Vue Couture',
   siteDescription: 'My first Gridsome Application Hooray!',
-  plugins: [],
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Post',
+        path: 'content/posts/**/*.md',
+        route: '/posts/:slug',
+      },
+    },
+  ],
 };
